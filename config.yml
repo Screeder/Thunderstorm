@@ -1,0 +1,11 @@
+main:
+  
+  ConstantFrequency: true
+  Frequency: 
+    Min: 7
+    Max: 13
+    Constant: 10
+  
+  BlockDamage:  
+    Fire: true
+    Lightning: true

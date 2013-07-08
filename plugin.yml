@@ -1,3 +1,19 @@
 name: Thunderstorm
-main: io.github.Screeder.thunderstorm.thunderstorm
-version: 0.1
+main: io.github.screeder.thunderstorm.Thunderstorm
+version: 0.5
+
+commands:
+   thunderstorm:
+      description: Creates or removes a heavy thunderstorm.
+      usage: /<command>
+      #permission: thunderstorm.admin
+      #permission-message: You don't have <permission>
+      
+permissions:
+   thunderstorm.*:
+      description: Gives access to all commands
+      children:
+         thunderstorm.admin: true
+   thunderstorm.admin:
+      description: Allows you to kick a user
+      default: op
